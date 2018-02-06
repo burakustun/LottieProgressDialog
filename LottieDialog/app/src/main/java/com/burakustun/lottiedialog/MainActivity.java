@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Button btnAnimation2 = findViewById(R.id.btnAnimation2);
 
         btnAnimation1.setOnClickListener( v -> {
-            //create dialog with loading.json animation
-            //loading.json file is located in src/main/assets
+            //create dialog with confetti animation
+            //confetti.json file is located in src/main/assets
             DialogFragment lottieDialog = new LottieDialogFragment().newInstance("confetti.json");
             lottieDialog.show(fragmentManager,"lottieDialog");
         });
@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnAnimation2.setOnClickListener( v -> {
 
-            //create dialog with gears.json animation, loop is disabled
-            //gears.json file is located in src/main/assets
+            //create dialog with trophy animation, loop is disabled
+            //trophy.json file is located in src/main/assets
             final DialogFragment lottieDialog = new LottieDialogFragment().newInstance("trophy.json",false);
             //make dialog not cancelable
             lottieDialog.setCancelable(false);
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         /*new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final DialogFragment lottieDialog = new LottieDialogFragment().newInstance("gears.json",false);
+                final DialogFragment lottieDialog = new LottieDialogFragment().newInstance("trophy.json",false);
             lottieDialog.setCancelable(false);
             lottieDialog.show(fragmentManager,"lottieDialog2");
 

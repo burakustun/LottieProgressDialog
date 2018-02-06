@@ -106,7 +106,6 @@ public class LottieDialogFragment extends DialogFragment {
 
             lavProgress.setAnimation(jsonFileName);
             lavProgress.loop(loop);
-            //lavProgress.setRepeatCount(repeatCount);
             lavProgress.playAnimation();
         }
 
