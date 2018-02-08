@@ -22,20 +22,42 @@ or Maven:
 
 ## Usage
 
-1- Find a lottie animation or create a new one
+1- Find a lottie animation (you can use http://lottiefiles.com) or create a new one
 
 2- Create assets directory in **src/main/**
 
 3- Put your json file of animation in **src/main/assets**
 
-4- Create a dialog using:
+4- Create a dialog
+
+Cancelable looping animation dialog:
 
 ```java
         //confetti.json is file name of animation
         DialogFragment dialogFragment = new LottieDialogFragment().newInstance("confetti.json"); 
-        dialogFragment.setCancelable(false);
         dialogFragment.show(getFragmentManager(),"tag");
 ```
+
+![animation gif](http://xn--burakstn-b6ac.com.tr/images/confetti.gif "Cancelable dialog with confetti animation") 
+
+
+Non-cancelable non-looping animation dialog:
+```java
+  final DialogFragment lottieDialog = new LottieDialogFragment().newInstance("trophy.json",false);
+                lottieDialog.setCancelable(false);
+                lottieDialog.show(fragmentManager,"lottieDialog2");
+
+                //DISMISS AFTER 5 SEC
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        lottieDialog.dismiss();
+                    }
+                },5000);
+
+```
+
+![animation gif](http://xn--burakstn-b6ac.com.tr/images/trophy.gif "Non-cancelable dialog with trophy animation") 
 
 ## Useful Links
 
