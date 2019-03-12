@@ -3,12 +3,12 @@ Progress dialog which uses Lottie library for animations
 
 ## Examples
 
-![example1](http://xn--burakstn-b6ac.com.tr/images/example1.gif)
-![example2](http://xn--burakstn-b6ac.com.tr/images/example2.gif)
-![example3](http://xn--burakstn-b6ac.com.tr/images/example3.gif)
-![example4](http://xn--burakstn-b6ac.com.tr/images/example4.gif)
-![example5](http://xn--burakstn-b6ac.com.tr/images/example5.gif)
-![example6](http://xn--burakstn-b6ac.com.tr/images/example6.gif)
+![example1](https://s3.eu-central-1.amazonaws.com/burakustun/example1.gif)
+![example2](https://s3.eu-central-1.amazonaws.com/burakustun/example2.gif)
+![example3](https://s3.eu-central-1.amazonaws.com/burakustun/example3.gif)
+![example4](https://s3.eu-central-1.amazonaws.com/burakustun/example4.gif)
+![example5](https://s3.eu-central-1.amazonaws.com/burakustun/example5.gif)
+![example6](https://s3.eu-central-1.amazonaws.com/burakustun/example6.gif)
 
 ## Download
 
@@ -47,7 +47,7 @@ Cancelable looping animation dialog:
         dialogFragment.show(getFragmentManager(),"tag");
 ```
 
-![animation gif](http://xn--burakstn-b6ac.com.tr/images/confetti.gif "Cancelable dialog with confetti animation") 
+![animation gif](https://s3.eu-central-1.amazonaws.com/burakustun/confetti.gif "Cancelable dialog with confetti animation") 
 
 Non-cancelable non-looping animation dialog:
 ```java
@@ -65,7 +65,7 @@ Non-cancelable non-looping animation dialog:
 
 ```
 
-![animation gif](http://xn--burakstn-b6ac.com.tr/images/trophy.gif "Non-cancelable dialog with trophy animation") 
+![animation gif](https://s3.eu-central-1.amazonaws.com/burakustun/trophy.gif "Non-cancelable dialog with trophy animation") 
 
 ## Useful Links
 
